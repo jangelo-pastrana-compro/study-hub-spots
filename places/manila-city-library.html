@@ -28,6 +28,52 @@
          <tr><th>Best Time to Visit</th><td>Morning Sessions</td></tr>
     </table>
 
-    
+    <hr>
+    <h2>Order Enquiry Form</h2>
+
+    <form action="#" method="POST">
+        
+        
+        <p>
+            <label for="quantity">Quantity (Seats):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+        </p>
+
+        
+        <fieldset>
+            <legend>Select Your Study Desk Preference</legend>
+            <p>
+                <input type="radio" id="delivery-solo" name="delivery-method" value="solo" checked>
+                <label for="delivery-solo">Solo Cubicle</label>
+            </p>
+            <p>
+                <input type="radio" id="delivery-group" name="delivery-method" value="group">
+                <label for="delivery-group">Group Table Space</label>
+            </p>
+        </fieldset>
+
+       
+            <legend>Select Optional Extras</legend>
+            <p>
+                <input type="checkbox" id="extra-outlet" name="extras" value="power-outlet">
+                <label for="extra-outlet">Power Outlet Access</label>
+            </p>
+            <p>
+                <input type="checkbox" id="extra-wifi" name="extras" value="premium-wifi">
+                <label for="extra-wifi">High-Speed Wi-Fi Coupon</label>
+            </p>
+        </fieldset>
+
+
+        <p>
+            <label for="enquiry-email">Contact Email:</label>
+            <input type="email" id="enquiry-email" name="contact-email" required>
+        </p>
+         
+        <p>
+            <button type="submit">Submit Enquiry</button>
+        </p>
+
+    </form>
 </body>
 </html>
