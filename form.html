@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest a Place - Study Hub Spots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="suggest.html">Suggest a Spot</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <h1>Suggest a New Study Spot</h1>
+
+   
+    <form action="#" method="POST">
+
+       
+        <p>
+            <label for="place-name">Place Name:</label>
+            <input type="text" id="place-name" name="place-name" required>
+        </p>
+
+       
+        <fieldset>
+            <legend>What category is this place?</legend>
+            <p>
+                <input type="radio" id="cat-library" name="category" value="library" checked>
+                <label for="cat-library">Public / School Library</label>
+            </p>
+            <p>
+                <input type="radio" id="cat-cafe" name="category" value="cafe">
+                <label for="cat-cafe">Study Cafe</label>
+            </p>
+            <p>
+                <input type="radio" id="cat-outdoor" name="category" value="outdoor">
+                <label for="cat-outdoor">Outdoor / Public Space</label>
+            </p>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>What makes this place good? (Select all that apply)</legend>
+            <p>
+                <input type="checkbox" id="good-wifi" name="features" value="good-wifi">
+                <label for="good-wifi">Strong Wi-Fi Connection</label>
+            </p>
+            <p>
+                <input type="checkbox" id="good-quiet" name="features" value="quiet">
+                <label for="good-quiet">Quiet Atmosphere</label>
+            </p>
+            <p>
+                <input type="checkbox" id="good-affordable" name="features" value="affordable">
+                <label for="good-affordable">Affordable / Free Entry</label>
+            </p>
+        </fieldset>
+
+        
+        <p>
+            <label for="suggest-email">Your Contact Email:</label>
+            <input type="email" id="suggest-email" name="contact-email" required>
+        </p>
+
+        
+        <p>
+            <button type="submit">Submit Suggestion</button>
+        </p>
+
+    </form>
+
+</body>
+</html>

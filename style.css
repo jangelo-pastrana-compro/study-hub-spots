@@ -1,0 +1,137 @@
+:root {
+    --brand: #008080;         
+    --brand-dark: #004d4d;   
+    --bg-card: #f9f9f9;       
+    --text-color: #222222;    
+}
+
+.place-card {
+    background-color: var(--bg-card);  
+    border-radius: 8px;                
+    padding: 20px;                     
+    border-left: 6px solid var(--brand); 
+    margin-bottom: 24px;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+}             
+
+.place-card h3 {
+    font-size: 1.5rem;                 
+    margin-top: 0;
+}
+
+.place-card h3 a {
+    color: var(--brand-dark);          
+    text-decoration: none;
+}
+
+fieldset {
+    padding: 20px;                     
+    border-radius: 8px;                
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+legend {
+    color: var(--brand);              
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;                     
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: var(--brand);    
+    color: white;
+    padding: 12px 24px;                
+    border: none;                     
+    border-radius: 4px;
+    cursor: pointer;                   
+    font-weight: bold;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid var(--brand);   
+    outline-offset: 2px;               
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: #ffffff;
+}
+
+
+header, .header-container {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+h1 {
+    color: var(--brand-dark);
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+
+body > p:first-of-type, .subtitle {
+    color: #666666;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: var(--brand);
+    color: white;
+}
+
+
+img[src*="pastrana"], .profile-img {
+    border-radius: 50%; 
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+    object-fit: cover;
+    margin: 15px auto;
+    display: block;
+}
