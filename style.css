@@ -135,3 +135,13 @@ img[src*="pastrana"], .profile-img {
     margin: 15px auto;
     display: block;
 }
+
+.place-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.place-card {
+    flex: 1 1 240px;
+}
