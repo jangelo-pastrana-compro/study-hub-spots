@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Study Hub Spots</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <h1>
+        Contact Us
+    </h1>
+
+    <form action="#" method="POST">
+        
+        <fieldset>
+            <legend>Details</legend>
+
+            <p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+           
+            <p>
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="suggest">Suggest a Study Spot</option>
+                    <option value="correction">Report a Location Correction</option>
+                    <option value="feedback">General Site Feedback</option>
+                    <option value="other">Something Else</option>
+                </select>
+            </p>
+
+           
+            <p>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+            </p>
+
+            
+            <p>
+                <button type="submit">Send message</button>
+            </p>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
